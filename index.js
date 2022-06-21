@@ -30,8 +30,6 @@ const winner = () => {
 
                 // })
             }
-
-
         }
     })
 }
@@ -54,6 +52,7 @@ Array.from(box).forEach((ele) => {
                 first.style.width = '20em';
                 second.style.width = '20em';
                 first.innerText = `'X' is playing`
+                first.style.transition= '2s';
 
             }else if(turn === 'O'){
                 first.style.display = 'none'
@@ -61,6 +60,7 @@ Array.from(box).forEach((ele) => {
                 first.style.width = '20em';
                 second.style.width = '20em';
                 second.innerText = `'O' is playing`
+                second.style.transition= '2s';
             }
             // [0].innerText  = "Turn for " + turn;
         }
