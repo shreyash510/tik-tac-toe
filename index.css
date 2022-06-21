@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ' Marker', cursive;
+}
+.info{
+    display: none;
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+    background-color: white;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #8108e4;
+}
+.container{
+    /* visibility: hidden; */
+    background:linear-gradient(45deg, #9561fb, #a15efa, #ac5af9, #b756f7, #c251f5);
+    /* border: 1px solid; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width:100% ; */
+}
+.player{
+    width: 17vw;
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto); */
+}
+
+.player #first{
+    display: inline;
+    text-align: center;
+    color: #8108e4;  
+    background-color: white;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: none;
+}
+.player #second{
+    display: inline;
+    text-align: center;
+    color: #8108e4;  
+    background-color: white;
+    padding: 0.7em;
+    border-radius: 10px;
+    border: none;
+}
+
+.playArea{
+    margin: 0.5em;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: repeat(3, 5vw);
+    grid-template-columns: repeat(3, 5vw);
+}
+.playArea .box{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playArea span{
+    font-size: 1.5vw;
+    font-weight: 900;
+    cursor: pointer;    
+    position: relative; 
+    color: #8108e4;  
+}
+
+.action button{
+    width: 8em;
+    padding: 0.5em;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border: none;
+    color: #8108e4;
+    font-weight: 800;
+}
+
+
+@media (max-width:1115px) {
+    .player{
+        width: 20%;
+    }
+}
+
+@media (max-width:790px) {
+    .player #first{
+        font-size: 1em;
+    }
+    .player #second{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:400px) {
+    .playArea{
+        width: 100%;
+    }
+}
